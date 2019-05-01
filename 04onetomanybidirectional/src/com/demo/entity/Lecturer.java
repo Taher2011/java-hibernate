@@ -27,7 +27,7 @@ public class Lecturer {
 	private String city;
 
 	@OneToMany(mappedBy = "lecturer", cascade = { CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST,
-			CascadeType.REFRESH })
+			CascadeType.REFRESH, CascadeType.REMOVE })
 	private List<Course> courses = new ArrayList<>();
 
 	public Lecturer() {

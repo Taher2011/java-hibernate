@@ -13,7 +13,7 @@ public class DeleteCourseClient {
 			session = SessionFactoryUtil.getSessionFactory().openSession();
 			session.beginTransaction();
 			// get the Course by primary key id
-			Course getCourse = session.get(Course.class, 10);
+			Course getCourse = session.get(Course.class, 1);
 			if (getCourse != null) {
 				System.out.println("Instructor is " + getCourse);
 				session.delete(getCourse);

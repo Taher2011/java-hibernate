@@ -13,7 +13,7 @@ public class GetInstructorDetailClient {
 			session = SessionFactoryUtil.getSessionFactory().openSession();
 			session.beginTransaction();
 			// get the InstructorDetail by primary key id
-			InstructorDetail getInstructorDetail = session.get(InstructorDetail.class, 2);
+			InstructorDetail getInstructorDetail = session.get(InstructorDetail.class, 3);
 			if (getInstructorDetail != null) {
 				System.out.println("Instructor Infor is " + getInstructorDetail.getInstructor());
 				session.getTransaction().commit();

@@ -13,7 +13,7 @@ public class GetCourseClient {
 			session = SessionFactoryUtil.getSessionFactory().openSession();
 			session.beginTransaction();
 			// get the Course by primary key id
-			Course getCourse = session.get(Course.class, 5);
+			Course getCourse = session.get(Course.class, 1);
 			if (getCourse != null) {
 				System.out.println("Lecturer Infor is " + getCourse);
 				session.getTransaction().commit();

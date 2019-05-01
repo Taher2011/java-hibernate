@@ -6,14 +6,14 @@
 
 	<session-factory>
 		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-		<property name="connection.url">jdbc:oracle:thin:@//localhost:1521/orcl.168.1.6</property>
-		<property name="connection.username">system</property>
-		<property name="connection.password">9893AaBb</property>
-		<property name="hibernate.default_schema">hbnt</property>
+		<property name="connection.url">jdbc:oracle:thin:@//localhost:1521/orcl</property>
+		<property name="connection.username">SYSTEM</property>
+		<property name="connection.password">SYSTEM</property>
+		<property name="hibernate.default_schema">C##HBNT</property>
 
 		<property name="connection.pool_size">5</property>
 
-		<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		<property name="dialect">org.hibernate.dialect.Oracle12cDialect</property>
 	</session-factory>
 
 

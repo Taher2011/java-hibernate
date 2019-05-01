@@ -14,11 +14,11 @@ public class UpdateLectureClient {
 			session = SessionFactoryUtil.getSessionFactory().openSession();
 			session.beginTransaction();
 			// get the Lecturer by primary key id
-			Lecturer getLecturer = session.get(Lecturer.class, 11);
-			Course getCourse = session.get(Course.class, 20);
+			Lecturer getLecturer = session.get(Lecturer.class, 1);
+			Course getCourse = session.get(Course.class, 1);
 			if (getLecturer != null) {
 				System.out.println("Instructor is " + getLecturer);
-				System.out.println("Instructor is " + getCourse);
+				System.out.println("Course is " + getCourse);
 				getCourse.setLecturer(getLecturer);
 			} else {
 				System.out.println("No Record Found");

@@ -14,7 +14,7 @@ public class DeleteLecturerClient {
 			session = SessionFactoryUtil.getSessionFactory().openSession();
 			session.beginTransaction();
 			// get the Lecturer by primary key id
-			Lecturer getLecturer = session.get(Lecturer.class, 8);
+			Lecturer getLecturer = session.get(Lecturer.class, 2);
 			if (getLecturer != null) {
 				System.out.println("Instructor is " + getLecturer);
 				for (Course course : getLecturer.getCourses()) {
